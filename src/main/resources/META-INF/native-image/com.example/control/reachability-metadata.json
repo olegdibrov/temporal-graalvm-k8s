@@ -1,0 +1,74 @@
+{
+  "reflection": [
+    {
+      "type": {
+        "proxy": [
+          "io.temporal.serviceclient.WorkflowServiceStubs"
+        ]
+      }
+    },
+    {
+      "type": {
+        "proxy": [
+          "io.temporal.internal.sync.StubMarker"
+        ]
+      }
+    },
+    {
+      "type": "io.grpc.netty.shaded.io.netty.channel.epoll.EpollSocketChannel",
+      "allDeclaredConstructors": true
+    },
+    {
+      "type": "io.grpc.netty.shaded.io.netty.channel.epoll.EpollEventLoopGroup",
+      "allDeclaredConstructors": true
+    },
+    {
+      "type": "io.grpc.netty.shaded.io.netty.channel.epoll.Epoll",
+      "allDeclaredFields": true,
+      "allDeclaredConstructors": true
+    },
+    {
+      "type": "io.netty.channel.epoll.EpollChannelOption",
+      "allDeclaredConstructors": true,
+      "allPublicConstructors": true,
+      "allDeclaredMethods": true,
+      "allPublicMethods": true
+    },
+    {
+      "type": "io.grpc.netty.shaded.io.netty.channel.epoll.EpollChannelOption",
+      "allDeclaredConstructors": true,
+      "allPublicConstructors": true,
+      "allDeclaredMethods": true,
+      "allPublicMethods": true,
+      "allDeclaredFields": true
+    },
+    {
+      "type": "io.grpc.netty.shaded.io.netty.channel.ChannelOption",
+      "allDeclaredFields": true,
+      "allDeclaredMethods": true
+    },
+    {
+      "type": "io.grpc.netty.shaded.io.netty.channel.unix.UnixChannelOption",
+      "allDeclaredFields": true,
+      "allDeclaredMethods": true
+    },
+    {
+      "type": "io.grpc.netty.shaded.io.netty.channel.epoll.EpollMode",
+      "allDeclaredFields": true,
+      "allDeclaredMethods": true
+    },
+    {
+      "type": {
+        "proxy": [
+          "io.temporal.serviceclient.WorkflowServiceStubs"
+        ]
+      },
+      "methods": [
+        {
+          "name": "shutdown",
+          "parameterTypes": []
+        }
+      ]
+    }
+  ]
+}
