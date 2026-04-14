@@ -1,0 +1,30 @@
+image:
+  repository: control
+  tag: latest
+  pullPolicy: Never
+
+imagePullSecrets: []
+
+replicaCount: 1
+
+env:
+  TEMPORAL_TARGET: "temporal-frontend:7233"
+
+service:
+  type: ClusterIP
+  port: 8893
+  targetPort: 8893
+
+podAnnotations: {}
+affinity: {}
+
+pdb:
+  enabled: false
+  minAvailable: 1
+
+hpa:
+  enabled: false
+  minReplicas: 1
+  maxReplicas: 1
+  targetCPUUtilizationPercentage: 75
+  targetMemoryUtilizationPercentage: 80

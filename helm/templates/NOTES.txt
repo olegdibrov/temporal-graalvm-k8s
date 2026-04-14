@@ -1,0 +1,13 @@
+1) Service
+   Name: {{ include "cc.fullname" . }}
+   Port: {{ .Values.service.port }}
+
+2) Ingress
+
+   TLS: yes (ALB terminates HTTPS using your ACM certificate)
+
+3) Health
+   - Probes & ALB check: GET /api/center/tenants
+
+4) DB
+   - URL: {{ .Values.env.SPRING_DATASOURCE_URL }}
